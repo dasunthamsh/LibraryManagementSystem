@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="846.0" prefWidth="1034.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.libraryManagementSystem.controller.AddMemberFormController">
+   <children>
+      <AnchorPane fx:id="pane" layoutY="5.0" prefHeight="841.0" prefWidth="1062.0" style="-fx-background-color: white;">
+         <children>
+            <JFXTextField fx:id="txtMemberName" labelFloat="true" layoutX="407.0" layoutY="167.0" onAction="#txtNameOnAction" prefHeight="31.0" prefWidth="220.0" promptText="Name " />
+            <JFXTextField fx:id="txtMemberEmail" labelFloat="true" layoutX="407.0" layoutY="261.0" prefHeight="31.0" prefWidth="220.0" promptText="Email " />
+            <JFXTextField fx:id="txtMemberAddress" labelFloat="true" layoutX="81.0" layoutY="261.0" onAction="#txtAddressOnAction" prefHeight="31.0" prefWidth="220.0" promptText="Address " />
+            <JFXTextField fx:id="txtMemberNumber" labelFloat="true" layoutX="733.0" layoutY="167.0" onAction="#txtNumberOnAction" prefHeight="31.0" prefWidth="220.0" promptText="Number " />
+            <JFXTextField fx:id="txtMemberId" labelFloat="true" layoutX="81.0" layoutY="167.0" onAction="#txtMemberIdOnAction" prefHeight="31.0" prefWidth="220.0" promptText="Member ID " />
+            <Button layoutX="213.0" layoutY="384.0" mnemonicParsing="false" onAction="#btnAddOnAction" prefHeight="39.0" prefWidth="102.0" style="-fx-background-radius: 8; -fx-background-color: linear-gradient(to right top, #6c5ce7, #8554ed, #9f48f1, #b935f2, #d300f0);" text="ADD">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="361.0" layoutY="384.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="39.0" prefWidth="102.0" style="-fx-background-radius: 8; -fx-background-color: linear-gradient(to right top, #6c5ce7, #8554ed, #9f48f1, #b935f2, #d300f0);" text="UPDATE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="507.0" layoutY="384.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="39.0" prefWidth="102.0" style="-fx-background-radius: 8; -fx-background-color: linear-gradient(to right top, #6c5ce7, #8554ed, #9f48f1, #b935f2, #d300f0);" text="DELETE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="645.0" layoutY="384.0" mnemonicParsing="false" onAction="#btnSearchOnAction" prefHeight="39.0" prefWidth="102.0" style="-fx-background-radius: 8; -fx-background-color: linear-gradient(to right top, #6c5ce7, #8554ed, #9f48f1, #b935f2, #d300f0);" text="SEARCH">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="427.0" layoutY="26.0" text="Add Members">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tblAddMember" layoutX="24.0" layoutY="538.0" prefHeight="300.0" prefWidth="1000.0" stylesheets="@../css/fullpackstyling.css">
+              <columns>
+                <TableColumn fx:id="tblMemberId" prefWidth="133.0" text="Member ID " />
+                <TableColumn fx:id="btnName" prefWidth="201.0" text="Name " />
+                  <TableColumn fx:id="tblNumber" prefWidth="115.0" text="Number " />
+                  <TableColumn fx:id="tblAddress" prefWidth="225.0" text="Address " />
+                  <TableColumn fx:id="tblEmail" prefWidth="325.0" text="Email " />
+              </columns>
+            </TableView>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </AnchorPane>
+   </children>
+</AnchorPane>

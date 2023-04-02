@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="829.0" prefWidth="1301.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.libraryManagementSystem.controller.DashbordFormController">
+   <children>
+      <AnchorPane fx:id="pane" prefHeight="829.0" prefWidth="1301.0" style="-fx-background-color: white;">
+         <children>
+            <AnchorPane fx:id="contex" layoutX="274.0" layoutY="29.0" prefHeight="841.0" prefWidth="1062.0">
+               <children>
+                  <BarChart fx:id="barChart" layoutX="56.0" layoutY="305.0" prefHeight="499.0" prefWidth="650.0" style="-fx-background-radius: 20;">
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis side="LEFT" />
+                    </yAxis>
+                  </BarChart>
+                  <Pane layoutX="52.0" layoutY="38.0" opacity="0.44" prefHeight="215.0" prefWidth="958.0" style="-fx-background-color: linear-gradient(to right top, #6c5ce7, #8554ed, #9f48f1, #b935f2, #d300f0); -fx-background-radius: 20;">
+                     <children>
+                        <Pane layoutX="34.0" layoutY="22.0" prefHeight="172.0" prefWidth="203.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+                           <children>
+                              <Text fx:id="txtNumOfMember" fill="#c61818" layoutX="51.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="101.99999651312828">
+                                 <font>
+                                    <Font name="System Bold" size="74.0" />
+                                 </font>
+                              </Text>
+                              <Label layoutX="57.0" layoutY="14.0" text="Members">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="270.0" layoutY="22.0" prefHeight="172.0" prefWidth="203.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+                           <children>
+                              <Text fx:id="txtNoOfBook" fill="#c61818" layoutX="54.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="101.99999651312828">
+                                 <font>
+                                    <Font name="System Bold" size="74.0" />
+                                 </font>
+                              </Text>
+                              <Label layoutX="73.0" layoutY="16.0" text="Books">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children></Pane>
+                        <Pane layoutX="504.0" layoutY="22.0" prefHeight="172.0" prefWidth="203.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+                           <children>
+                              <Text fx:id="txtNoOfSuppliers" fill="#c61818" layoutX="49.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="101.99999651312828">
+                                 <font>
+                                    <Font name="System Bold" size="74.0" />
+                                 </font>
+                              </Text>
+                              <Label layoutX="58.0" layoutY="16.0" text="Suppliers">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children></Pane>
+                        <Pane layoutX="729.0" layoutY="22.0" prefHeight="172.0" prefWidth="203.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+                           <children>
+                              <Label layoutX="72.0" layoutY="13.0" text="Issued">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Text fx:id="txtNoOfIssuedBooks" fill="#c61818" layoutX="51.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="101.99999651312828">
+                                 <font>
+                                    <Font name="System Bold" size="74.0" />
+                                 </font>
+                              </Text>
+                           </children></Pane>
+                     </children></Pane>
+                  <PieChart fx:id="piechart" layoutX="727.0" layoutY="323.0" prefHeight="225.0" prefWidth="277.0" style="-fx-background-radius: 20;" />
+               </children></AnchorPane>
+            <Pane layoutX="-11.0" layoutY="-4.0" prefHeight="97.0" prefWidth="58.0" style="-fx-background-color: linear-gradient(to right top, #6c5ce7, #8554ed, #9f48f1, #b935f2, #d300f0);" />
+            <Pane layoutY="773.0" prefHeight="97.0" prefWidth="58.0" style="-fx-background-color: linear-gradient(to right top, #6c5ce7, #8554ed, #9f48f1, #b935f2, #d300f0);" />
+            <AnchorPane prefHeight="870.0" prefWidth="265.0" style="-fx-background-color: linear-gradient(to right top, #6c5ce7, #8554ed, #9f48f1, #b935f2, #d300f0); -fx-background-radius: 30;">
+               <children>
+                  <Label layoutX="69.0" layoutY="62.0" prefHeight="47.0" prefWidth="102.0" text="Library" textFill="WHITE">
+                     <font>
+                        <Font name="Forte" size="29.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="31.0" fitWidth="35.0" layoutX="16.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/dashboard.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton layoutY="741.0" onAction="#btnLogoutOnAction" prefHeight="60.0" prefWidth="267.0" ripplerFill="#116cff" style="-fx-border-radius: 50; -fx-background-color: black;" text="Log out                            " textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton layoutX="47.0" layoutY="159.0" onAction="#btnDashbordOnAction" prefHeight="70.0" prefWidth="220.0" ripplerFill="#116cff" style="-fx-border-radius: 50;" text="Dashbord                    " textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <ImageView fitHeight="31.0" fitWidth="35.0" layoutX="16.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/customer.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton layoutX="47.0" layoutY="232.0" onAction="#btnAddMemberOnAction" prefHeight="70.0" prefWidth="220.0" ripplerFill="#116cff" style="-fx-border-radius: 50;" text=" Manage member         " textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <ImageView fitHeight="116.0" fitWidth="156.0" layoutX="42.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/libry.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton layoutX="47.0" layoutY="302.0" onAction="#btnAddBookOnAction" prefHeight="70.0" prefWidth="220.0" ripplerFill="#116cff" style="-fx-border-radius: 50;" text=" Manage Book               " textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <ImageView fitHeight="31.0" fitWidth="35.0" layoutX="16.0" layoutY="322.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/book.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton layoutX="47.0" layoutY="372.0" onAction="#btnAddSupplyerOnAction" prefHeight="70.0" prefWidth="220.0" ripplerFill="#116cff" style="-fx-border-radius: 50;" text=" Manage Supplier          " textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <ImageView fitHeight="31.0" fitWidth="35.0" layoutX="16.0" layoutY="392.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/suply.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton layoutX="47.0" layoutY="444.0" onAction="#btnIshudeBookOnAction" prefHeight="70.0" prefWidth="220.0" ripplerFill="#116cff" style="-fx-border-radius: 50;" text="Issued Book                 " textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton layoutX="47.0" layoutY="515.0" onAction="#btnReturnBookOnAction" prefHeight="70.0" prefWidth="220.0" ripplerFill="#116cff" style="-fx-border-radius: 50;" text="  Return Book                  " textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <ImageView fitHeight="31.0" fitWidth="35.0" layoutX="14.0" layoutY="463.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/PlaceOrder.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="31.0" fitWidth="35.0" layoutX="14.0" layoutY="604.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/reports.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton layoutX="47.0" layoutY="585.0" onAction="#btnReportOnAction" prefHeight="70.0" prefWidth="220.0" ripplerFill="#116cff" style="-fx-border-radius: 50;" text="Reports                        " textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <ImageView fitHeight="31.0" fitWidth="35.0" layoutX="14.0" layoutY="534.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/additem.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Label layoutX="1115.0" layoutY="4.0" text="Date : " />
+            <Label fx:id="lblDate" layoutX="1165.0" layoutY="-1.0" prefHeight="31.0" prefWidth="173.0" />
+            <Label layoutX="301.0" layoutY="4.0" text="Time : ">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Text fx:id="texteClock" layoutX="351.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="93.99998593330383">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </AnchorPane>
+   </children>
+</AnchorPane>

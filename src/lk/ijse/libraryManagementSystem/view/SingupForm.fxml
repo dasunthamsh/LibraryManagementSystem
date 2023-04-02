@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.libraryManagementSystem.controller.SingupFormController">
+   <children>
+      <AnchorPane fx:id="pane" layoutX="5.0" layoutY="5.0" prefHeight="829.0" prefWidth="1301.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="333.0" fitWidth="315.0" layoutX="243.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/signup-image.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="750.0" layoutY="119.0" text="Sign up">
+               <font>
+                  <Font name="System Bold" size="46.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="25.0" fitWidth="24.0" layoutX="738.0" layoutY="301.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/name.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="738.0" layoutY="434.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/password.png" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="txtName" labelFloat="true" layoutX="787.0" layoutY="297.0" onAction="#lodeUserOnAction" prefHeight="31.0" prefWidth="217.0" promptText=" Name" />
+            <JFXTextField fx:id="txtPassword" labelFloat="true" layoutX="787.0" layoutY="434.0" onAction="#lodeComformPassword" prefHeight="31.0" prefWidth="217.0" promptText="Password" />
+            <Button fx:id="btnRegister" layoutX="738.0" layoutY="592.0" mnemonicParsing="false" onAction="#btnRegisternOnAction" prefHeight="47.0" prefWidth="116.0" style="-fx-background-color: linear-gradient(to right top, #6c5ce7, #8554ed, #9f48f1, #b935f2, #d300f0);" text="Register">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="14.0" layoutY="43.0" prefHeight="47.0" prefWidth="102.0" text="Library">
+               <font>
+                  <Font name="Forte" size="29.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="738.0" layoutY="365.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/user.png" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="txtUsername" labelFloat="true" layoutX="787.0" layoutY="365.0" onAction="#lodePasswordOnAction" prefHeight="31.0" prefWidth="217.0" promptText="Username" />
+            <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="738.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/id.png" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="txtId" labelFloat="true" layoutX="787.0" layoutY="236.0" onAction="#lodeNameOnAction" prefHeight="31.0" prefWidth="217.0" promptText=" Id" />
+            <JFXCheckBox fx:id="checkBox" checkedColor="#218ed7" layoutX="738.0" layoutY="505.0" onAction="#checkBoxOnAction" text="I agree all ststements in Terms of service" underline="true" />
+            <ImageView fitHeight="53.0" fitWidth="54.0" layoutX="39.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/logo1.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="34.0" layoutY="754.0" mnemonicParsing="false" onAction="#btnBackOnAction" prefHeight="47.0" prefWidth="116.0" style="-fx-background-color: linear-gradient(to right top, #6c5ce7, #8554ed, #9f48f1, #b935f2, #d300f0);" text="Back">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label fx:id="showError" layoutX="733.0" layoutY="475.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

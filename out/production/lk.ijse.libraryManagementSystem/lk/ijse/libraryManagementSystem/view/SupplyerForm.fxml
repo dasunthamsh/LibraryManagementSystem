@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="841.0" prefWidth="1062.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.libraryManagementSystem.controller.SupplyerFormController">
+   <children>
+      <JFXTextField fx:id="txtSupplyerName" labelFloat="true" layoutX="417.0" layoutY="177.0" onAction="#txtSupplyerNameOnAction" prefHeight="31.0" prefWidth="220.0" promptText="Supplyer Name " />
+      <JFXTextField fx:id="txtSupplyerNumber" labelFloat="true" layoutX="91.0" layoutY="271.0" prefHeight="31.0" prefWidth="220.0" promptText="Number" />
+      <JFXTextField fx:id="txtSupplyerEmail" labelFloat="true" layoutX="743.0" layoutY="177.0" onAction="#txtSupplyerEmailOnAction" prefHeight="31.0" prefWidth="220.0" promptText="Email" />
+      <JFXTextField fx:id="txtSupplyerId" labelFloat="true" layoutX="91.0" layoutY="177.0" onAction="#txtSupplyerIdOnAction" prefHeight="31.0" prefWidth="220.0" promptText="Supplyer ID " />
+      <Button layoutX="257.0" layoutY="512.0" mnemonicParsing="false" onAction="#btnAddOnAction" prefHeight="39.0" prefWidth="102.0" style="-fx-background-radius: 8; -fx-background-color: linear-gradient(to right top, #6c5ce7, #8554ed, #9f48f1, #b935f2, #d300f0);" text="ADD">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="405.0" layoutY="512.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="39.0" prefWidth="102.0" style="-fx-background-radius: 8; -fx-background-color: linear-gradient(to right top, #6c5ce7, #8554ed, #9f48f1, #b935f2, #d300f0);" text="UPDATE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="551.0" layoutY="512.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="39.0" prefWidth="102.0" style="-fx-background-radius: 8; -fx-background-color: linear-gradient(to right top, #6c5ce7, #8554ed, #9f48f1, #b935f2, #d300f0);" text="DELETE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="689.0" layoutY="512.0" mnemonicParsing="false" onAction="#btnSearchOnAction" prefHeight="39.0" prefWidth="102.0" style="-fx-background-radius: 8; -fx-background-color: linear-gradient(to right top, #6c5ce7, #8554ed, #9f48f1, #b935f2, #d300f0);" text="SEARCH">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="437.0" layoutY="36.0" text="Add Supplyer">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
